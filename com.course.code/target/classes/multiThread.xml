@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Thread" parallel="classes" thread-count="4">
+    <!--
+        tests级别：不同test tag下可以在不同的线程下执行
+                   相同test tag下只能在一个线程中执行
+        methods级别：所有用例都可以在不用线程下执行
+        thread-count:代表最大并发线程数
+        xml配置文件不能指定线程池，只有方法可以指定线程池，
+    -->
+    <test name="demo1">
+        <classes name = "d1">
+            <class name="com.course.tesng.multiThreadOnXml.multiTreadTest"/>
+        </classes>
+    </test>
+    <test name="demo2">
+        <classes name="d2">
+            <class name="com.course.tesng.multiThreadOnXml.multiTreadTest"/>
+        </classes>
+    </test>
+</suite>

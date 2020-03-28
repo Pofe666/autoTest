@@ -1,0 +1,79 @@
+[
+  {
+    "description":"这是一个会返回cookies信息的get请求",
+    "request":{
+      "uri":"/getCookies",
+      "method":"get"
+    },
+    "response":{
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "cookies":{
+        "login":"true"
+      },
+      "text":"恭喜你获得cookies信息成功"
+    }
+  },
+  {
+    "description":"这是一个带cookies信息的get请求",
+    "request":{
+      "uri":"/get/with/cookies",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "text":"这是一个需要携带cookies信息才能访问的get请求"
+    }
+  },
+  {
+    "description": "这是一个带参数的get请求",
+    "request": {
+      "uri": "/get/with/param",
+      "method": "get",
+      "queries": {
+        "name": "hpf",
+        "age": "18"
+      }
+    },
+    "response": {
+      "code": "0",
+      "message": "success"
+    }
+  },
+  {
+    "description":"模拟一个post请求",
+    "request":{
+      "uri":"/postdemo",
+      "method":"post"
+    },
+    "response":{
+      "headers": {
+        "Content-Type": "text/html;charset=gbk"
+      },
+      "text":"这是我的第一个mock的post请求"
+    }
+  },
+    { "description":"接收第三方的数据,返回是JSON格式",
+      "request":{
+        "uri":"/post/with/cookies",
+        "method":"post",
+        "cookies": {
+          "login": "true"
+        },
+        "json":{
+          "name":"huhansan",
+          "age":"18"
+        }
+      },
+      "response":{
+        "status":200,
+        "json":{
+          "code": "0",
+          "message": "返回成功"
+        }
+      }
+    }
+  ]

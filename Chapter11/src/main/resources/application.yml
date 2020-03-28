@@ -1,5 +1,5 @@
 server:
-  port: 8888
+  port: 8885
 
 #在同级目录下生成log文件夹
 logging:

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="test">
+    <test name="group">
+        <classes>
+            <class name="com.course.tesng.suite.SuiteConfig"/>
+            <class name="com.course.tesng.group.GoupsOnTest"/>
+        </classes>
+    </test>
+<!--    <test name="pay">-->
+<!--        <classes>-->
+<!--            <class name="com.course.tesng.suite.SuiteConfig"/>-->
+<!--            <class name="com.course.tesng.suite.PayTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="suitename">
+    <test name="runAll">
+        <groups>
+            <run>
+                <include name = "teacher"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.course.tesng.group.GroupClass1"/>
+            <class name="com.course.tesng.group.GroupClass2"/>
+            <class name="com.course.tesng.group.GroupsClass3"/>
+        </classes>
+
+    </test>
+    <test name="OnlyRunStu">
+        <groups>
+            <run>
+                <include name="teacher"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="com.course.tesng.group.GroupClass1"/>
+            <class name="com.course.tesng.group.GroupClass2"/>
+            <class name="com.course.tesng.group.GroupsClass3"/>
+        </classes>
+    </test>
+</suite>

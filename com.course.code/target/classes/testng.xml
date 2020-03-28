@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "report">
+    <test name ="method">
+        <classes>
+            <class name = "com.course.extendReport.TestMethodsDemo"/>
+                <Methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                    <include name="test3"/>
+                    <include name="logDemo"/>
+                </Methods>
+            <class name = "com.course.tesng.timeout.TimeOutTest"/>
+            <class name ="com.course.tesng.depend.DependTest"/>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.course.extendReport.ExtentTestNGIReporterListener">
+        </listener>
+    </listeners>
+
+</suite>
